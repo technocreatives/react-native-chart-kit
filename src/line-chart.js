@@ -193,14 +193,14 @@ class LineChart extends AbstractChart {
             count: (Math.min(...data.datasets[0].data) === Math.max(...data.datasets[0].data)) ?
               1 : 4,
             data: data.datasets[0].data,
+            precision,
+            unit,
             paddingTop,
             paddingRight
           })}
           {this.renderVerticalLines({
             ...config,
             data: data.datasets[0].data,
-            precision,
-            unit,
             paddingTop,
             paddingRight
           })}
