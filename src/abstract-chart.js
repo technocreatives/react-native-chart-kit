@@ -38,7 +38,7 @@ class AbstractChart extends Component {
           y={(height * 3 / 4) - ((height - paddingTop) / count * i) + 12}
           fontSize={12}
           fill={this.props.chartConfig.color(0.5)}
-        >{(((Math.max(...data) - Math.min(...data)) / (count - 1) * i) + Math.min(...data)).toFixed(precision)}
+        >{(((Math.max(...data) - Math.min(...data)) / (count - 1) * i) + Math.min(...data)).toFixed(precision) + unit}
         </Text>
       )
     })
